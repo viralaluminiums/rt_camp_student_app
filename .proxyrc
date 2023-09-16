@@ -1,0 +1,24 @@
+{
+  "/api": {
+    "target": "http://localhost:8000/",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/api"
+    }
+  },
+  "/private": {
+    "target": "http://localhost:8000/",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/private": "/private"
+    }
+  },
+  "/socket.io": {
+    "target": "http://localhost:8000/",
+    "changeOrigin": true,
+    "ws": true,
+    "pathRewrite": {
+      "^/socket.io": "/socket.io"
+    }
+  }
+}
